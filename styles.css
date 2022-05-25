@@ -1,0 +1,26 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+    
+}
+body {
+    background-color:#ecbd59;
+}
+#nav-login{
+    background-color: #c08442;
+}
+#nav-cont{
+    background-color: #8b532d;
+}
+
+#logo{
+display: block;
+margin: 10px auto;
+height: 100px;
+width: 230px;
+
+}

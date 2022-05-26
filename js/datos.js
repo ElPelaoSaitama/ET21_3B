@@ -38,8 +38,9 @@ if (principal){
        creaDiv.innerHTML = macetero[i][1]
        creaval.innerHTML = macetero[i][2]
        creaval2.innerHTML = macetero[i][3]
-       creaimg.setAttribute('src',macetero[i][0])
-       
+       creaimg.setAttribute('src',macetero[i][0]);
+
+
        //INSERTA LOS DATOS EN LA ETIQUETAS ASIGNADAS
        principal.appendChild(creaDiv);
        principal.appendChild(creaimg);
@@ -47,6 +48,15 @@ if (principal){
 
 
    }
+
+};
+
+#lo{
+   <div class="card">
+    <img src="">
+    <br>
+    <div> </div>
+    <p> revisa la nueva coleccion de plantas que han llegado </p>
+    <a href="" class="btn btn-primary stretched-link">ir a plantas</a>
+</div>
 }
-
-

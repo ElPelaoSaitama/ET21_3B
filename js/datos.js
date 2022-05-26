@@ -50,13 +50,3 @@ if (principal){
    }
 
 };
-
-#lo{
-   <div class="card">
-    <img src="">
-    <br>
-    <div> </div>
-    <p> revisa la nueva coleccion de plantas que han llegado </p>
-    <a href="" class="btn btn-primary stretched-link">ir a plantas</a>
-</div>
-}

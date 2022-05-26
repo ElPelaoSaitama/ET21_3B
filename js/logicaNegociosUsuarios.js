@@ -1,3 +1,27 @@
+function obtenerListaUsuarios(){
+    var listaUsuarios =JSON.parse(localStorage.getItem('listaUsuarios'));
+
+    if (listaUsuarios == null) {
+        listaUsuarios =
+        [
+            ['1','Saitama','Pelao','pelao@gmail.com','1234','1997-06-05']
+        ]
+    }
+    return listaUsuarios;
+}
+function validarCredenciales(pCorreo , pContrasenna){
+    var listaUsuarios = obtenerListaUsuarios();
+    var bAcceso = false;
+
+    for(var i=0; i < listaUsuarios.length; i++){
+        if(pCorreo == listaUsuarios[i][3] && pContrasenna == listaUsuarios[i][4]){
+            bAcceso = true;
+            sessionStorage.setItem('usuarioActivo',listaUsuarios[i][1] + ' ' + listaUsuarios[i][2]);
+        }
+    }
+    return bAcceso;
+}
+
 //Ejecutando funciones
 document.getElementById("btn__iniciar-sesion").addEventListener("click", iniciarSesion);
 document.getElementById("btn__registrarse").addEventListener("click", register);

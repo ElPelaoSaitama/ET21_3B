@@ -22,7 +22,7 @@ position: sticky;
 top: 0px;
 z-index: 1030;
 }
-.sticky-top{
+.sticky-top3{
 	position : --webkit-sticky;
 	position: sticky;
 	top: 54px;
@@ -34,4 +34,10 @@ display: block;
 margin: 10px auto;
 height: 100px;
 width: 230px;
+}
+
+#pene{
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
 }

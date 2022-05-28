@@ -1,39 +1,45 @@
-const procustos =[
+const productos =[
     {
       precio: 500,
       id: 1,
       title: "Café",
-      thumbnailUrl: "https://www.maceteros.es/media/catalog/product/cache/4/image/650x/040ec09b1e35df139433887a97daa66f/c/u/cubo-negro_1.jpg"
+      thumbnailUrl: "https://www.maceteros.es/media/catalog/product/cache/4/image/650x/040ec09b1e35df139433887a97daa66f/c/u/cubo-negro_1.jpg",
+      "desc": "blablabla desc"
     },
     {
       "precio": 300,
       "id": 2,
       "title": "Pizza",
-      "thumbnailUrl": "https://picsum.photos/id/10/600"
+      "thumbnailUrl": "https://picsum.photos/id/10/600",
+      "desc": "blablabla desc"
     },
     {
       "precio": 100,
       "id": 3,
       "title": "Agua",
-      "thumbnailUrl": "https://picsum.photos/id/20/600"
+      "thumbnailUrl": "https://picsum.photos/id/20/600",
+      "desc": "blablabla desc"
     },
     {
       "precio": 50,
       "id": 4,
       "title": "Sandía",
-      "thumbnailUrl": "https://picsum.photos/id/30/600"
+      "thumbnailUrl": "https://picsum.photos/id/30/600",
+      "desc": "blablabla desc"
     },
     {
       "precio": 10,
       "id": 5,
       "title": "Mango",
-      "thumbnailUrl": "https://picsum.photos/id/40/600"
+      "thumbnailUrl": "https://picsum.photos/id/40/600",
+      "desc": "blablabla desc"
     },
     {
       "precio": 150,
       "id": 6,
       "title": "Chela",
-      "thumbnailUrl": "https://picsum.photos/id/50/600"
+      "thumbnailUrl": "https://picsum.photos/id/50/600",
+      "desc": "blablabla desc"
     }
   ]
 
@@ -41,7 +47,7 @@ const procustos =[
 
 var texto_iterable=""
 
-procustos.forEach((element) => {
+productos.forEach((element) => {
 
     var tarjetita_html = `
 
@@ -50,9 +56,9 @@ procustos.forEach((element) => {
         <div class="container-card">
             <div class ="card">
                 <img src="${element.thumbnailUrl} " class "card-img-top" alt="foto">
-                <h4 class ="card-litle"> card litle </h4>
-                <p class ="card-text "> ${element.title}</p>
-                <a href="#" class="btn btn-primary stretched-link">obtener </a>
+                <h3 class ="card-litle"> ${element.title} </h3>
+                <p class ="card-text "> ${element.desc} </p>
+                <a href="#" class="btn btn-primary stretched-link">precio ${element.precio} </a>
             </div>
         </div>
     </div>

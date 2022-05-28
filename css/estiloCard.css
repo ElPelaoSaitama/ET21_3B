@@ -29,7 +29,7 @@ width: 230px;
 
 .title{
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     color: #6a6a6a;
     margin-top: 100px;
     font-weight: 100;
@@ -65,7 +65,14 @@ width: 230px;
 .container-card .card h4{
     font-weight: 600;
 }
-
+.container-card .card h3{
+    font-size: 16px;
+    font-weight: 200;
+    color: black ;  
+    text-align: center;
+    color: #6a6a6a;
+    font-family: 'Roboto', sans-serif;
+}
 .container-card .card p{
     padding: 0 1rem;
     font-size: 16px;
@@ -75,5 +82,5 @@ width: 230px;
 .container-card .card a {
     font-weight: 500;
     text-decoration: none;
-    color: #3498db;
+    color: darkslategrey;
 }

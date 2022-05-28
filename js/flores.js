@@ -3,7 +3,7 @@ const productos =[
       precio: 500,
       id: 1,
       title: "Café",
-      thumbnailUrl: "https://www.maceteros.es/media/catalog/product/cache/4/image/650x/040ec09b1e35df139433887a97daa66f/c/u/cubo-negro_1.jpg",
+      thumbnailUrl: "../img/cat_flores.jpg",
       "desc": "blablabla desc"
     },
     {

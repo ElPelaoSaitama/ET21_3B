@@ -8,7 +8,7 @@ const productos =[
     },
     {
       "id": 2,
-      "title": "Flores",
+      "title": "<br><br><br>Flores",
       "thumbnailUrl": "../img/cat_flores.jpg",
       "desc": "Bonitas Flores ;)",
       "link": "sub-pages/flores.html"

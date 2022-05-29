@@ -1,26 +1,57 @@
-function obtenerListaUsuarios(){
-    var listaUsuarios =JSON.parse(localStorage.getItem('listaUsuarios'));
+function login(){
+    var correo, pass;
+    correo = document.getElementById("exampleInputEmail1").value;
+    pass = document.getElementById("exampleInputPassword1").value;
 
-    if (listaUsuarios == null) {
-        listaUsuarios =
-        [
-            ['1','Saitama','Pelao','pelao@gmail.com','1234','1997-06-05']
-        ]
-    }
-    return listaUsuarios;
-}
-function validarCredenciales(pCorreo , pContrasenna){
-    var listaUsuarios = obtenerListaUsuarios();
-    var bAcceso = false;
-
-    for(var i=0; i < listaUsuarios.length; i++){
-        if(pCorreo == listaUsuarios[i][3] && pContrasenna == listaUsuarios[i][4]){
-            bAcceso = true;
-            sessionStorage.setItem('usuarioActivo',listaUsuarios[i][1] + ' ' + listaUsuarios[i][2]);
+    if(correo == "prueba@gmail.com" && pass == "1234"){
+        window.location = "../index-cliente.html";
+    }else{
+        if(correo == ""){
+            alert("Debe Ingresar Correo");
+            document.getElementById("exampleInputEmail1").focus();
+        }else{
+            if(pass == ""){
+                alert("Debe Ingresar Contraseña");
+                document.getElementById("exampleInputPassword1").focus();
+            }else{
+                if(correo != "prueba@gmail.com" || pass != "1234"){
+                    alert("Correo o Contraseña incorrecta");
+                    document.getElementById("exampleInputPassword1").value = "";
+                }
+            }
         }
     }
-    return bAcceso;
 }
+
+function register(){
+    var newNom,newCorreo,newUser,newPass;
+
+    newNom = document.getElementById("nombre").value;
+    newCorreo = document.getElementById("correo").value
+    newUser = document.getElementById("user").value;
+    newPass = document.getElementById("password").value;
+
+    if(newNom == ""){
+        alert("Ingrese Nombre");
+        document.getElementById("nombre").focus();
+    }else{
+        if(newCorreo == ""){
+            alert("Ingrese Correo");
+            document.getElementById("correo").focus();
+        }else{
+            if(newUser == ""){
+                alert("Ingresa Nombre Usuario");
+                document.getElementById("user").focus(); 
+            }else{
+                if(newPass == ""){
+                    alert("Ingresa Contraseña");
+                    document.getElementById("password").focus();
+                }
+            }
+        }
+    }
+}
+
 
 //Ejecutando funciones
 document.getElementById("btn__iniciar-sesion").addEventListener("click", iniciarSesion);

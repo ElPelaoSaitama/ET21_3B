@@ -1,56 +1,56 @@
   [
     {
-      "precio": 500,
+      "precio": 15000,
       "id": 1,
-      "title": "Magali",
-      "thumbnailUrl": "https://picsum.photos/id/106/600"
+      "title": "macetero 1",
+      "thumbnailUrl": "../img/macetero_1.webp"
     },
     {
-      "precio": 300,
+      "precio": 20000,
       "id": 2,
-      "title": "Pizza",
-      "thumbnailUrl": "https://picsum.photos/id/10/600"
+      "title": "macetero 2",
+      "thumbnailUrl": "../img/macetero_2.webp"
     },
     {
-      "precio": 100,
+      "precio": 10000,
       "id": 3,
-      "title": "Agua",
-      "thumbnailUrl": "https://picsum.photos/id/20/600"
+      "title": "macetero 3",
+      "thumbnailUrl": "../img/macetero_3.webp"
     },
     {
-      "precio": 50,
+      "precio": 9000,
       "id": 4,
-      "title": "Sandía",
-      "thumbnailUrl": "https://picsum.photos/id/30/600"
+      "title": "flor 1",
+      "thumbnailUrl": "../img/flor1.webp"
     },
     {
-      "precio": 10,
+      "precio": 7500,
       "id": 5,
-      "title": "Mango",
-      "thumbnailUrl": "https://picsum.photos/id/40/600"
+      "title": "flor 2 ",
+      "thumbnailUrl": "../img/flor2.webp"
     },
     {
-      "precio": 150,
+      "precio": 10000,
       "id": 6,
-      "title": "Chela",
-      "thumbnailUrl": "https://picsum.photos/id/50/600"
+      "title": "flor 3 ",
+      "thumbnailUrl": "../img/flor3.webp"
     },
     {
-      "precio": 500,
-      "id": 1,
-      "title": "Magali",
-      "thumbnailUrl": "https://picsum.photos/id/106/600"
+      "precio": 5000,
+      "id": 7,
+      "title": "planta 1",
+      "thumbnailUrl": "../img/planta_1.webp"
     },
     {
-      "precio": 300,
-      "id": 2,
-      "title": "Pizza",
-      "thumbnailUrl": "https://picsum.photos/id/10/600"
+      "precio": 4500,
+      "id": 8,
+      "title": "planta 2",
+      "thumbnailUrl": "../img/planta_2.webp"
     },
     {
-      "precio": 100,
-      "id": 3,
-      "title": "Agua",
-      "thumbnailUrl": "https://picsum.photos/id/20/600"
+      "precio": 5000,
+      "id": 9,
+      "title": "planta 3",
+      "thumbnailUrl": "../img/planta_3.webp"
     }
   ]

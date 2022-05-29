@@ -4,7 +4,7 @@ function login(){
     pass = document.getElementById("exampleInputPassword1").value;
 
     if(correo == "prueba@gmail.com" && pass == "1234"){
-        window.location = "../index-cliente.html";
+        window.location = "compra.html";
     }else{
         if(correo == ""){
             alert("Debe Ingresar Correo");

@@ -2,6 +2,7 @@
 
                               Integrantes
 
+
                               Angel Montecinos 
                               Madeline Escobar 
                               Jordan Bolbaran

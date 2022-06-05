@@ -7,13 +7,13 @@ const templateCarrito = document.getElementById('template-carrito').content
 const fragment = document.createDocumentFragment()
 let carrito = {}
 
-/*document.addEventListener('DOMContentLoaded', e => {
-    fetchData()
+document.addEventListener('DOMContentLoaded', e => {
+    /*fetchData()*/
     if (localStorage.getItem('carrito')) {
         carrito = JSON.parse(localStorage.getItem('carrito'))
         pintarCarrito()
     }
-});*/
+});
 
 // Eventos
 document.addEventListener('DOMContentLoaded', e => { fetchData() });
@@ -88,6 +88,7 @@ const pintarCarrito = () => {
 
     pintarFooter()
     localStorage.setItem('carrito', JSON.stringify(carrito))
+
 }
 
 const pintarFooter = () => {
@@ -119,6 +120,31 @@ const pintarFooter = () => {
         pintarCarrito()
     })
 
+/*Pasar detalle al Modal */
+const open = document.getElementById('open');
+const modal_container = document.getElementById('modal_container');
+const close = document.getElementById('close');
+const donacion = document.getElementById('donacion');
+document.getElementById('sub_total').innerHTML ="$"+nPrecio
+document.getElementById('id').innerHTML =nCantidad
+
+/*no esta listo*/ 
+if(donacion ==1){
+    document.getElementById('total').innerHTML ="$"+nPrecio
+}
+document.getElementById('total').innerHTML ="$"+nPrecio*0.95
+
+open.addEventListener('click', () => {
+    modal_container.classList.add('show');
+});
+
+close.addEventListener('click',() => {
+    modal_container.classList.remove('show');
+    /*Eliminar datos modal*/
+document.getElementById('sub_total').innerHTML =""
+document.getElementById('id').innerHTML =""
+document.getElementById('total').innerHTML =""
+});
 }
 
 const btnAumentarDisminuir = e => {
@@ -142,4 +168,5 @@ const btnAumentarDisminuir = e => {
     }
     e.stopPropagation()
 }
+
 
